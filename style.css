@@ -1,3 +1,14 @@
 body {
-    background: red;
+	background: url(adam.jpg);
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+h1 {
+	font-size: 54px
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
 }
