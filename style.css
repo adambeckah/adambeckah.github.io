@@ -1,14 +1,48 @@
 body {
-	background: url(adam.jpg);
 	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	background:lightgray;
 }
 
-h1 {
-	font-size: 54px
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center
 }
 
-a {
+.links-bar {
+	background: cadetblue;
+	text-align: center;
+	padding: 15px 15px;
+
+}
+
+.links-bar a {
+	text-decoration: underline;
 	color: black;
-	text-decoration: none;
-	font-weight: bold;
+	font-weight:  bold;
 }
+
+.the-basics-list {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.the-basics-list a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*h1 {
+	text-align: center;
+}   
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}*/
