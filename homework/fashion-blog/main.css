@@ -56,14 +56,14 @@ nav a:hover {
 	color: black;
 }
 
-.article-preview a {
+/*.article-preview a {
 	color: #DD0000;
 	text-decoration: none;
 	font-weight: bold;
 	display:block;
 	float: right;
 	
-}
+}*/
 
 
 img {
@@ -82,10 +82,19 @@ article {
 	border-bottom: 1px solid #dddddd;
 }
 
-.article-preview a:hover {
-	color: #aa0000
+.continues {
+	text-align: right;
 }
 
+.continues a {
+	color: #DD0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.continues a:hover {
+	color: #aa0000;
+}
 
 .footer-links a:after {
 	display: inline-block;
