@@ -6,27 +6,28 @@ body {
 	color: #444;
 }
 
-#wrapper {
+#page-wrapper {
 	width: 1080px;
 	margin: 0 auto;
 	padding: 54px;
 }
 
-#main {
+#articles {
 	width: 720px;
 	float: left;
 }
 
 #sidebar {
+	float: left;
 	width: 340px;
-	float:right;
 	margin-top: 55px;
+	margin-left: 15px;
 }
+
 
 #footer {
 	color: #bbb;
-
-	/*clear: both;*/
+	/*float: left;*/
 }
 
 a {
@@ -103,25 +104,39 @@ img {
 #header #nav {
 	margin: 0;
 	padding: 0;
-	background: black;
-	height: 55px;
 }
 
 #header #nav a {
-	display: inline-block;
-	background-color: black;
-	height: 35px;
-	width: 150px;
-	text-align: center;
-	padding: 10px;
+	float: left;
+	width: 179px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-size: 24px;
 	color: white;
-	text-decoration: none;
+	background: black;
+	margin-right: 1px;
+	padding: 15px 0;
+	text-align: center;
+}
+
+#header #nav a:hover {
+	color: white;
+	background: #900;
 }
 
 .article {
 	border-bottom: 1px solid #DDD;
 	margin: 54px 0;
 	padding-bottom: 27px;
+}
+
+.article p:first-of-type:first-letter {
+	float: left;
+	font-size: 108px;
+	line-height: 1;
+	color: #ddd;
+	margin: -2px 2px 0 -2px;
 }
 
 .module {
@@ -137,8 +152,11 @@ img {
 	margin: auto;
 }
 
-/*.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
