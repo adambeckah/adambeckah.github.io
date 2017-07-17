@@ -1,0 +1,38 @@
+body {
+	text-align: center;
+	background-color: slategrey;
+}
+
+.wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+button {
+	background-color: cadetblue;
+}
+
+.box {
+	border: 1px solid black;
+	float: left;
+	padding: 50px;
+	margin: 25px;
+	background: rgba(255,255,255,.2); 
+}
+
+#f-box {
+	margin-left: 150px;
+}
+
+#f-answer {
+	font-size: 20px;
+}
+
+#c-answer {
+	font-size: 20px;
+}
+.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
