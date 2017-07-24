@@ -31,6 +31,23 @@ button {
 #c-answer {
 	font-size: 20px;
 }
+
+.hot {
+	background: rgb(255, 50, 50);
+}
+
+.convert{
+	background-color: cadetblue;
+}
+
+.cold {
+	background: rgb(99, 154, 242);
+}
+
+.picture {
+	margin: 10px;
+}
+
 .clearfix:after {
 	  content: "";
 	  display: table;
