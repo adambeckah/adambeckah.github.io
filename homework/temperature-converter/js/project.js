@@ -44,20 +44,25 @@ $('.convert').click(function(){
 	
 	if (fAnswer > 80) {
 		$('#c-box').addClass('hot').removeClass('cold');
+		$('.picture').slideUp();
 	} else if (fAnswer <= 32) {
 		$('#c-box').addClass('cold').removeClass('hot');
+		$('.picture').slideUp();
 	} else {
 		$('#c-box').removeClass('cold').removeClass('hot');
+		$('.picture').slideUp();
 	}
 	
 	if (cAnswer > 27) {
 		$('#f-box').addClass('hot').removeClass('cold');
+		$('.picture').slideUp();
 	} else if (cAnswer <= 0) {
 		$('#f-box').addClass('cold').removeClass('hot');
+		$('.picture').slideUp();
 	} else if (fAnswer = 24) {
-		$('.picture').slideDown('src');
+		$('.picture').slideDown();
 	} else if (cAnswer = 24) {
-		$('.picture').slideDown('src');
+		$('.picture').slideDown();
 	} else {
 		$('#f-box').removeClass('cold').removeClass('hot');
 	}

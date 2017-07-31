@@ -1,0 +1,92 @@
+
+@font-face {
+	font-family: 'GothamSSm';
+	src: url('../fonts/HCo_GothamSSm/OpenType/GothamSSm-Light.otf');
+}
+
+@font-face {
+	font-family: 'ChronTx';
+	src: url('../fonts/HCo_ChronTx_G1_Pro/OpenType/ChronicleTextG1-Roman-Pro.otf');
+}
+
+
+
+.nav { 
+	font-family: 'GothamSSm';
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eaeaea;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.logo {
+	height: 30px;
+	width: 150px;
+	margin-left: 10px;
+}
+
+.nav-words {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	flex-shrink: 1;
+	flex-basis: 500px;
+}
+
+/*.nav-words li {
+	padding: 10px;
+}
+
+.nav-words li:hover {
+	background-color: white;
+}*/
+
+.headline {
+	font-family: 'GothamSSm';
+	padding: 50px;
+	text-align: center;
+}
+
+.img {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.img p {
+	font-family: 'GothamSSm';
+}
+
+
+.text {
+	font-family: 'ChronTx';
+	padding: 50px 200px;
+}
+
+
+
+.footer {
+	font-family: 'GothamSSm';
+	background-color: #eaeaea;
+	display: flex;
+	justify-content: space-around;
+	border-top: 20px solid #f7f7f7;
+}
+
+.footer-input {
+	margin-left: 40px;
+}
+
+.email-social-input {
+	flex-shrink: 1;
+}
+
+.footer li {
+	list-style-type: none;
+}
+
