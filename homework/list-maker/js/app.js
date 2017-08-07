@@ -30,8 +30,8 @@ $(document).ready(function () {
 	function appendItem(newItem) {
 		$('#list').append('<li>' + newItem + '</li>');
 
-	$('li').click(function (){
-		$(this).remove();
+		$('li').click(function (){
+			$(this).remove();
 	});
 	};
 })
