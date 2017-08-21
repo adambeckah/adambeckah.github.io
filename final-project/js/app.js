@@ -16,7 +16,7 @@ var quotesPulledToPosition = {
 
 // Scroll Stuff
 
-$(window).scroll(function () {}
+$(window).scroll(function() {
 
 	scrollTop = $(window).scrollTop();
 	
