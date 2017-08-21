@@ -1,30 +1,22 @@
+// Variables
 var scrollTop = 0;
-var $firstImages = $('.first-images');
+var $hero = $('.hero');
 
 var pullQuote1Left = 0;
 var quotesPulledToPosition = {
 	firstQuote: false,
 	pullQuote1: $('.pull-quote-1'),
-	secondQuote: false,
-	pullQuote2: $('.pull-quote-2'),
 	thirdQuote: false,
 	pullQuote3: $('.pull-quote-3'),
-	fourthQuote: false,
-	pullQuote4: $('.pull-quote-4'),
 	fifthQuote: false,
 	pullQuote5: $('.pull-quote-5'),
-	sixthQuote: false,
-	pullQuote6: $('.pull-quote-6'),
 	seventhQuote: false,
 	pullQuote7: $('.pull-quote-7')
-
-
 };
 
+// Scroll Stuff
 
-
-$(window).scroll(function () {
-	// possibly base actions on scrollTop + window.height
+$(window).scroll(function () {}
 
 	scrollTop = $(window).scrollTop();
 	
@@ -33,50 +25,30 @@ $(window).scroll(function () {
 
 	quotePull(3500, 5000, 'pullQuote1', 'firstQuote' , 'left');
 
-	quotePull(4000, 6000, 'pullQuote2', 'secondQuote' , 'right');
+	quotePull(5300, 7300, 'pullQuote3', 'thirdQuote' , 'right');
 
-	quotePull(6500, 8500, 'pullQuote3', 'thirdQuote' , 'left');
+	quotePull(7000, 9000, 'pullQuote5', 'fifthQuote' , 'left');
 
-	quotePull(7100, 9100, 'pullQuote4', 'fourthQuote' , 'right');
-
-	quotePull(8500, 10500, 'pullQuote5', 'fifthQuote' , 'left');
-
-	quotePull(8800, 10800, 'pullQuote6', 'sixthQuote' , 'right');
-
-	quotePull(14300, 16300, 'pullQuote7', 'seventhQuote' , 'left');
+	quotePull(10200, 12200, 'pullQuote7', 'seventhQuote' , 'right');
 
 });
 
-
+// Hero Fade
 
 function topImageFade() {
 	if (scrollTop > 100) {
-		$firstImages.css('opacity' , 1 - (scrollTop - 100) / 700);
+		$hero.css('opacity' , 1 - (scrollTop - 100) / 700);
 	}
 }
 
-// function firstQuotePullLeft () {
-// 	if (scrollTop > 2750 && scrollTop < 4000) {
 
-// 		pullQuote1Left = 100 - (scrollTop - 2750);
-
-// 		console.log(pullQuote1Left);
-
-// 		if (pullQuote1Left >= 0 && !hasPullQuote1LeftBeenPulledLeft) {
-// 			$pullQuote1.css('left' , pullQuote1Left + '%');
-// 		} else {
-// 			hasPullQuote1LeftBeenPulledLeft = true;
-// 			$pullQuote1.css('left' , 0);
-// 		}
-// 	}
-// }
-
+// Pull Quotes
 
 function quotePull (minScrollTop, maxScrollTop, $pullQuote, quoteNum, direction ) {
 	console.log(scrollTop);
 	if (scrollTop > minScrollTop && scrollTop < maxScrollTop) {
 
-		pullQuoteOffset = 100 - ((scrollTop - minScrollTop) * .4);
+		pullQuoteOffset = 100 - ((scrollTop - minScrollTop) * .25);
 
 		if (pullQuoteOffset >= 0 && !quotesPulledToPosition[quoteNum]) {
 			quotesPulledToPosition[$pullQuote].css(direction , pullQuoteOffset + '%');
@@ -87,7 +59,46 @@ function quotePull (minScrollTop, maxScrollTop, $pullQuote, quoteNum, direction 
 		}
 	}
 }
+// Nav Change
 
+	$(window).scroll(function(){
+		console.log($(window).scrollTop());
+
+		if ($(window).scrollTop() > 50) {
+			$('nav').addClass('nav-small');
+			$('.logo').addClass('logo-small');
+			$('.nav-words').hide();
+			$('.mobile-nav').css('padding-top' , '25px')
+		} else {
+			$('nav').removeClass('nav-small');
+			$('.logo').removeClass('logo-small');
+			$('.nav-words').css('display' , 'flex');
+			$('.mobile-nav').css('padding-top' , '50px')
+		}
+
+	});
+
+
+// Responsive Nav
+
+	$(window).resize(function () {
+		console.log($(window).width());
+
+		if ($(window).width() > '1000') {
+			$('#large-nav').show();
+			$('#burger').hide();
+			$('.mobile-nav').hide()
+		} else {
+			$('#large-nav').hide();
+			$('#burger').show();
+
+		}
+	})
+
+
+	$('#burger').click(function () {
+		$('.mobile-nav').slideToggle();
+	});
 
 
 

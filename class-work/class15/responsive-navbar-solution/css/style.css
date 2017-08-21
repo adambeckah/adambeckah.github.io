@@ -1,0 +1,66 @@
+.container {
+	margin: 0 auto;
+	width: 85%;
+}
+
+header {
+	background-color: black;
+	overflow: hidden;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+header h1 {
+	font-size: 35px;
+	float: left;
+	color: white;
+}
+
+header nav {
+	float: right;
+	margin-top: 8px;
+}
+
+header nav a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+#burger {
+	display: none;
+	float: right;
+}
+
+#burger span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	background: #cdcdcd;
+	border-radius: 3px;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+#mobile-nav a {
+	display: block;
+	background: rgb(222, 222, 222);
+	text-align: center;
+}
+
+@media (max-width: 875px) {
+	#large-nav {
+		display: none;
+	}
+
+	#burger {
+		display: block;
+		margin-top: 6px;
+	}
+}

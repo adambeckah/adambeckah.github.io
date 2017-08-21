@@ -1,0 +1,10 @@
+body {
+	text-align: center;
+	background-color: lavender;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+	width: 200px;
+	background-color: cadetblue;
+}
